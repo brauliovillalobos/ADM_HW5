@@ -213,12 +213,12 @@ def page_ranking(G, iterations):
     return page_rank
 
 
-# PARALLEL AGORITHM TO COMPUTE THE BETWEENESS CENTRALITY -- SUB-ROUTINE ###########################
+# PARALLEL AGORITHM TO COMPUTE THE CLOSENESS CENTRALITY -- SUB-ROUTINE ###########################
 def close_routine(node, G):
     dist, parents = dijkstra(G, node)
     return sum([1/d for d in dist.values() if d != 0])
 
-# PARALLEL AGORITHM TO COMPUTE THE BETWEENESS CENTRALITY ###############
+# PARALLEL AGORITHM TO COMPUTE THE CLOSENESS CENTRALITY ###############
 def closeness_centrality(G):
     pool = mp.Pool(mp.cpu_count())
     closeness = dict()
