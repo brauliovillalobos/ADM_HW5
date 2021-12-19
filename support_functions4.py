@@ -1,3 +1,6 @@
+
+
+############### SUPPRT FUNCTIONS FOR FUNCRTIONALITY 4 ################
 import random
 import math
 
@@ -155,6 +158,8 @@ def iteration(G,s,t):
 
 def Karger(G,s,t):
 
+    number_of_iteration=len(G)
+
     # check if s and t are in the graph otherwise we can not compute the algorithm
     conts=0
     contt=0
@@ -171,7 +176,7 @@ def Karger(G,s,t):
     partitionA={}
     partitionB={}
     # I ran len G times even if it is not correct just for time reason but we can change this parameter
-    for i in range(len(G)):
+    for i in range(number_of_iteration):
         cut,partition1,partition2=iteration(G,s,t)
         if cut<min_cut:
             min_cut=cut
