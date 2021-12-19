@@ -5,4 +5,4 @@ This repository contains the Homework 5 of the Algorithmic Methods of Data Minin
 * support_functions4.py: contains the functions needed to run the Functionality 4 - Disconnecting graphs.
 * utilities.py: contains the functions needed to run the Functionality 2 - Finding the best users. 
 * images : a dir containing some plots for functionality 2.
-* Functionality dirs : contains the code for func 1, 2, 3 separated. In particular in Func 2 dir there is a betweeness example for a graph bigger then the one tested in main5.ipynb ( that took long to be computed).
+* Functionality dirs : contains the code for func 1, 2, 3,4 separated. In particular in Func 2 dir there is a betweeness example for a graph bigger then the one tested in main5.ipynb ( that took long to be computed).
